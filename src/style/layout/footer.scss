@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  &__wrapper {
+    display: flex;
+    gap: 55px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

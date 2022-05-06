@@ -1,0 +1,66 @@
+.headline {
+  &__title {
+    &--h1 {
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 80px;
+      text-transform: uppercase;
+      color: $color-white;
+
+      @include media-from(768) {
+        font-size: 80px;
+        line-height: 100px;
+      }
+      @include media-from(1280) {
+        font-size: 100px;
+        line-height: 151px;
+      }
+    }
+
+    &--h2 {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 65px;
+      color: $color-black-primary;
+      text-align: left;
+      text-transform: uppercase;
+
+      @include media-from(768) {
+        font-size: 50px;
+        line-height: 75px;
+      }
+    }
+
+    &--h3 {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 38px;
+      text-transform: uppercase;
+      color: $color-black-primary;
+    }
+  }
+
+  &__subtitle {
+    &--lg {
+      font-size: 25px;
+      line-height: 32px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $color-white;
+
+      @include media-from(768) {
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+  }
+  &__text {
+    font-weight: 400;
+
+    &--primary {
+      font-size: 16px;
+      line-height: 26px;
+      color: $color-black-primary;
+    }
+  }
+}

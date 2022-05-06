@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 100%;
+
+  @include media-from(768) {
+    padding: 0 80px;
+  }
+
+  @include media-from(991) {
+    padding: 0 150px;
+  }
+
+  @include media-from(1440) {
+    padding: 0 213px;
+  }
+
+  @include media-from(1920) {
+    max-width: 1920px;
+    padding: 0 240px;
+  }
+}

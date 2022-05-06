@@ -1,0 +1,17 @@
+.button {
+  background-color: transparent;
+  text-align: center;
+  padding: 15px 20px;
+  border: 1px solid $color-white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: none;
+  color: $color-white;
+
+  @include media-from(768) {
+    font-size: 17px;
+    line-height: 26px;
+    padding: 18px 23px;
+  }
+}

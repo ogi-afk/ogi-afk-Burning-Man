@@ -1,0 +1,52 @@
+.about {
+  @include media-from(1440) {
+    padding-top: 113px;
+    padding-bottom: 114px;
+  }
+
+  &__wrapper {
+    @include media-from(1440) {
+      display: grid;
+      gap: 0 40px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__headline {
+    @include media-from(1440) {
+      margin-bottom: 58px;
+      grid-column: 1/6;
+      flex-grow: 1;
+    }
+  }
+
+  &__list {
+    @include media-from(1440) {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-top: 19px;
+    margin-bottom: 67px;
+  }
+
+  &__foto {
+    @include media-from(1440) {
+      max-height: 300px;
+      align-items: flex-end;
+    }
+  }
+}

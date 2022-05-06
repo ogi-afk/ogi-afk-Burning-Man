@@ -1,0 +1,36 @@
+.header {
+  padding-top: 37px;
+  padding-bottom: 37px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+
+  @include media-from(1440) {
+    padding-top: 57px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 69px;
+  }
+
+  &__navigation {
+    display: none;
+
+    @include media-from(576) {
+      display: block;
+    }
+  }
+
+  &__tel {
+    color: $color-white;
+  }
+}
